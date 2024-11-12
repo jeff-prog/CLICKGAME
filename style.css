@@ -11,7 +11,7 @@ body {
     background-color: #2c2c2c; /* Fundo cinza escuro */
     color: white;
     display: flex;
-    flex-direction: column; /* Permite rolagem em telas menores */
+    flex-direction: column; /* Permite a rolagem em telas menores */
     align-items: center; /* Centraliza o conteúdo horizontalmente */
     min-height: 100vh;
     padding: 20px;
@@ -94,7 +94,7 @@ h1 {
     width: 100%;
     background-color: #555;
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* Distribuição uniforme */
     padding: 10px 0;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
@@ -264,19 +264,12 @@ tr:nth-child(3) {
 /* Grid para listas de itens */
 .arma-container, .equipamento-container, .personalidade-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Ajuste dinâmico para colunas */
     gap: 15px;
     margin: 20px 0;
 }
 
 /* Estilo específico das armas */
-.arma-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Define 4 colunas para armas */
-    gap: 15px;
-    margin-top: 20px;
-}
-
 .arma-item {
     text-align: center;
 }
